@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+User-agent: Googlebot-Image
+Allow: /logo.jpg
+Sitemap: https://chinmayakumarbiswal.in/sitemap.xml

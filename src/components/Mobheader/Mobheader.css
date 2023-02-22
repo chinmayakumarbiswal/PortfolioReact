@@ -1,0 +1,9 @@
+.mob-header
+{
+    padding: 10px;
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 11;
+}

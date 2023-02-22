@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+	<title>Chinmaya Kumar Biswal</title>
+    <link rel="shortcut icon" type="img/x-icon" href="js/favicon.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="js/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    
+    <script>
+    	$(document).ready(function(){
+    		$("#myModal").modal('show');
+    	});
+    </script>
+
+</head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+    <script src="js/circle-progress.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/scrolltosmooth/dist/scrolltosmooth.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.0/jquery-migrate.min.js"></script>
+    <script src="js/modernizr.custom.63321.js"></script>
+    <script src="js/jquery.stapel.js"></script>
+    <script>
+        (function($){
+            "use strict";
+            var NAY = {};
+            NAY.MenuTogglerClose = function()
+            {
+                $(".toggler-menu").on('click', function()
+                {
+                    $('.header-left').stop().toggleClass('menu-open');
+                });
+                $('.header-left a').on('click', function()
+                {
+                    var toggle = $('.toggler-menu');
+                });
+            }
+
+            $(document).on("ready", function()
+            {
+                NAY.MenuTogglerClose()
+            });
+        })(jQuery);
+    </script>
+    <script>
+        $(function()
+        {
+            var $grid = $('#tp-grid'),
+                $name = $('#name'),
+                $close = $('#close'),
+                $loader = $('').insertBefore($grid),
+                stapel = $grid.stapel({
+                    randomAngle : true,
+                    delay : 50,
+                    gutter : 70,
+                    pileAngles : 5,
+                    onLoad : function()
+                    {
+                        $loader.remove();
+                    },
+                    onBeforeOpen : function( pileName )
+                    {
+                        $name.html( pileName );
+                    },
+                    onAfterOpen : function ( pileName)
+                    {
+                        $close.show();
+                    }
+                });
+            $close.on( 'click', function()
+            {
+                $close.hide();
+                $name.empty();
+                stapel.closePile();
+            });
+
+
+            var smoothScroll = new scrollToSmooth('a',
+            {
+                easing: 'easeInOutBack',
+                duration: 1000,
+                durationRelative: true,
+                onScrollStart: (data) => {console.log(data);},
+                onScrollUpdate: (data) => {console.log(data);},
+                onScrollEnd: (data) => {console.log(data);},
+            });
+            smoothScroll.init();
+        });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init(
+            {
+                offset: 300,
+                duration: 1000
+            });
+    </script>
+  </body>
+</html>
