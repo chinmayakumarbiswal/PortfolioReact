@@ -1,0 +1,84 @@
+.education-box
+{
+    margin: 0;
+    padding: 35px;
+    border-radius: 10px;
+    background: #13131e;
+    list-style: none;
+    color: white;
+    width: 450px;
+    margin-top: 50px;
+    margin-left: -20px;
+}
+@media (max-width: 767px)
+{
+    .education-box
+    {
+        width: auto;
+    }
+}
+
+.education-box h6
+{
+    color: white;
+    margin: 5px 0;
+    font-size: 30px;
+    font-family: 'poppins',sans-serif;
+}
+.education-box li+li
+{
+    margin-top: 25px;
+}
+.mh-professional-skills
+{
+    padding-left: 20%;
+    color: white;
+    font-family: 'poppins',sans-serif;
+}
+.mh-professional-skills h3
+{
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 400;
+    margin-bottom: 60px;
+    font-family: 'poppins',sans-serif;
+    color: white;
+}
+.mh-professional-progress li
+{
+    display: inline-block;
+    margin:  0 auto;
+    float: none;
+    width: 48%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.mh-progress
+{
+    font-family: 'poppins',sans-serif;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    margin-top: -30px;
+    color: white;
+}
+.mh-progress .progressbar-text
+{
+    color: inherit !important;
+    margin-top: 18px !important;
+    font-family: 'poppins',sans-serif;
+}
+.mh-progress path:nth-child(1)
+{
+    stroke: rgba(0, 0, 0, 0.7);
+    stroke-width: 5px;
+}
+.mh-progress path:nth-child(2)
+{
+    stroke: #0ad6f1;
+    stroke-width: 5px;
+}
+.title-skills
+{
+    margin-bottom: 20px;
+}

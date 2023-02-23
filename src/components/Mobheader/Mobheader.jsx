@@ -1,4 +1,5 @@
 import React from 'react'
+import './Mobheader.css'
 import chinmaya2 from './chinmaya2.png'
 
 const Mobheader = () => {

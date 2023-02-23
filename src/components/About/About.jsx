@@ -1,5 +1,6 @@
 import React from 'react'
 import chinmayaimg from './chi.jpg'
+import './About.css'
 
 const About = () => {
   return (
