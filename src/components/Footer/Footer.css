@@ -1,0 +1,44 @@
+footer {
+    background: rgba(29, 25, 48, 0.555);
+    overflow-x: hidden;
+    padding: 14vmin 18vmin;
+  }
+  
+  footer p > span {
+    color: #ff512f;
+  }
+  
+  footer input {
+    border: none !important;
+  }
+  
+  footer input::placeholder {
+    color: white !important;
+  }
+  
+  footer .input-group  .input-group-text {
+    background: var(--bggradient);
+    border: none;
+  }
+  
+  footer .column i {
+    color: #dd2476;
+  }
+  footer a .fa
+  {
+    width: 50px;
+    height: 50px;
+    
+  }
+  
+  /* It is Adjacent sibling combinator */
+  
+  footer .column i + i {
+    padding: 0 0.5em;
+  }
+  @media only screen and (max-width: 768px)
+  {
+    footer .row .col-md-2 {
+        margin-top: 8vmin;
+      }
+  }

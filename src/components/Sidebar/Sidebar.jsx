@@ -9,7 +9,7 @@ const Sidebar = () => {
         </div>
         <ul class="nav nav-menu">
             <li>
-                <a href="#/" class="nav-link active" data-toggle="tooltip" title="HOME">
+                <a href="/" class="nav-link active" data-toggle="tooltip" title="HOME">
                     <i class="fa fa-user-o"></i>
                 </a>
             </li>
@@ -19,13 +19,8 @@ const Sidebar = () => {
                 </a>
             </li>
             <li>
-                <a href="cv/cvchinmaya.pdf" class="nav-link active" data-toggle="tooltip" title="RESUME">
+                <a href="https://www.canva.com/design/DAE9rw4s9zw/zJIjDsA6SRY8JRMsbpSNBQ/edit?utm_content=DAE9rw4s9zw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="nav-link active" data-toggle="tooltip" title="RESUME">
                     <i class="fa fa-file-word-o"></i>
-                </a>
-            </li>
-            <li>
-                <a href="#project" class="nav-link active" data-toggle="tooltip" title="Project">
-                    <i class="fa fa-wpexplorer"></i>
                 </a>
             </li>
             <li>

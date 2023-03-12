@@ -6,6 +6,7 @@ const About = () => {
   return (
     <section id="about">
         <div class="container">
+        <div class="separated"></div>
             <div class="row">
                 <div class="col-lg-4" data-aos="zoom-in">
                     <div class="about-me">
@@ -31,7 +32,7 @@ const About = () => {
                             <h3>Biography</h3>
                         </div>
                         <div class="text-white">
-                            <p>A 3rd yr IT-Cloud Technology And Information Security student at Centurion University of Technology and Management with an interest in System Admin and Web development.</p>
+                            <p>A diligent cloud technology enthusiast with the knowledge of AWS and GCP. looking for opportunity as solution architect to define the architecture, combine information from business, design and implement to solve business need and problems .</p>
                             <p> I am looking for growth. Currently, I’m looking for for internships and research projects in the field of Cloud Computing and to build up my career and skills.</p>
                         </div>
                         <div class="info-list">
