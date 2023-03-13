@@ -9,7 +9,7 @@ const Education = () => {
                 <div class="col-md-6">
                     <div class="resume-box">
                         <div class="title text-white">
-                            <h3>Education</h3>
+                            <h3>Education & Achievement</h3>
                         </div>
                         <div class="row">
                             <div class="col-lg-4">
@@ -26,12 +26,36 @@ const Education = () => {
                                     </li>
                                     <li>
                                         <span>2018-2021</span>
-                                        <h6>Graduation</h6>
+                                        <h6>Cloud Technology and Information Security</h6>
                                         <p>Centurion University of Technology and Management</p>
                                     </li>
                                     <li>
-                                        <span>2018-2021</span>
-                                        <h6>Graduation</h6>
+                                        <span>2021</span>
+                                        <h6>Skilled In Odisha</h6>
+                                        <p>Skilled In Odisha Gold Medalist in Cloud Computing</p>
+                                    </li>
+                                    <li>
+                                        <span>2021</span>
+                                        <h6>India Skill 2021</h6>
+                                        <p>India Skills National Representative </p>
+                                    </li>
+                                    <li>
+                                        <span>2021-2023</span>
+                                        <h6>Master in Computer Application</h6>
+                                        <p>Centurion University of Technology and Management</p>
+                                    </li>
+                                    <li>
+                                        <span>2022</span>
+                                        <h6>Web Developer at Mittiland.com</h6>
+                                        <p>Centurion University of Technology and Management</p>
+                                    </li>
+                                    <li>
+                                        <span>2022 - continue</span>
+                                        <h6>Freelance Web Developer</h6>
+                                    </li>
+                                    <li>
+                                        <span>2022-2023</span>
+                                        <h6>Web Developer (Part Time)</h6>
                                         <p>Centurion University of Technology and Management</p>
                                     </li>
                                     

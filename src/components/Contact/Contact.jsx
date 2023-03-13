@@ -38,7 +38,7 @@ const Contact = () => {
               <div class="col-lg-7" data-aos="zoom-in">
                   <div class="contact-form">
                       <h4>Say something</h4>
-                      <form action="https://chinmayakumarbiswal.in" id="contact-form" method="POST">
+                      <form action="https://scaleexam.tech/api/contactmailChinmaya" id="contact-form" method="GET">
                           <div class="row">
                               <div class="col-md-6">
                                   <div class="form-group">
@@ -64,7 +64,7 @@ const Contact = () => {
                               </div>
                               <div class="col-md-12">
                                   <div class="send">
-                                      <button class="btn btn-primary" type="submit" value="send">Send Message</button>
+                                      <button class="btn btn-primary" type="submit" value="send" name="sendMail">Send Message</button>
                                   </div>
                               </div>
                           </div>
