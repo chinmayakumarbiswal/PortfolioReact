@@ -1,7 +1,64 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Contact.css'
 
 const Contact = () => {
+    const [values, setValues] = useState({
+        name: '',email:'',subject:'',message:''
+    });
+    
+    
+    const setName = name => {
+        return ({ target: { value } }) => {
+          setValues(oldValues => ({...oldValues, [name]: value }));
+        }
+    };
+
+    const setEmail = email => {
+        return ({ target: { value } }) => {
+          setValues(oldValues => ({...oldValues, [email]: value }));
+        }
+    };
+
+    const setSubject = subject => {
+        return ({ target: { value } }) => {
+          setValues(oldValues => ({...oldValues, [subject]: value }));
+        }
+    };
+
+    const setMessage = message => {
+        return ({ target: { value } }) => {
+          setValues(oldValues => ({...oldValues, [message]: value }));
+        }
+    };
+    // alert(values.name+values.email+values.message);
+
+    const sendData = async () => {
+        const response = await fetch('/sendmail1', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(values)
+        });
+
+        if (response.status !== 200) {
+          throw new Error(`Request failed: ${response.status}`); 
+        }
+    }
+
+    const onSubmit = async (event) => {
+        event.preventDefault(); // Prevent default submission
+        try {
+          await sendData();
+          alert('Mail Send successfully !');
+          setValues({
+            name: '',email:'',subject:'',message:''
+          });
+        } catch (e) {
+          alert(`Mail send failed! ${e.message}`);
+        }
+      }
+
   return (
     <section id="messageme">
       <div class="container">
@@ -38,26 +95,28 @@ const Contact = () => {
               <div class="col-lg-7" data-aos="zoom-in">
                   <div class="contact-form">
                       <h4>Say something</h4>
-                      <form action="https://scaleexam.tech/api/contactmailChinmaya" id="contact-form" method="GET">
+                      <form onSubmit={onSubmit}>
+                      {/* <form action="http://localhost:3000/sendmail" id="contact-form" method="POST"> */}
+                      {/* <form action="https://scaleexam.tech/api/contactmailChinmaya" id="contact-form" method="GET"> */}
                           <div class="row">
                               <div class="col-md-6">
                                   <div class="form-group">
-                                    <input type="text" name="Name" placeholder="Name" class="form-control" />
+                                    <input type="text" name="name" placeholder="Name" class="form-control" value={values.name} onChange={setName('name')}/>
                                   </div>
                               </div>
                               <div class="col-md-6">
                                   <div class="form-group">
-                                    <input type="text" name="Email" placeholder="Email*" class="form-control" />
+                                    <input type="text" name="email" placeholder="Email*" class="form-control" value={values.email} onChange={setEmail('email')}/>
                                   </div>
                               </div>
                               <div class="col-md-12">
                                   <div class="form-group">
-                                    <input type="text" name="Subject" placeholder="Subject*" class="form-control" />
+                                    <input type="text" name="subject" placeholder="subject*" class="form-control" value={values.subject} onChange={setSubject('subject')}/>
                                   </div>
                               </div>
                               <div class="col-md-12">
                                   <div class="form-group">
-                                    <textarea name="Message" id="message" placeholder="Write Your Message*" rows="5" class="form-control">
+                                    <textarea name="Message" id="message" placeholder="Write Your Message*" rows="5" class="form-control" value={values.message} onChange={setMessage('message')}>
 
                                     </textarea>
                                   </div>
