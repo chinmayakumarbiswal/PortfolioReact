@@ -23,11 +23,11 @@ img
     outline: none !important;
 }
 a{
-    color: #ffc107;
+    color: #0ad6f1;
 }
 a:hover
 {
-    color: #07eeff;
+    color: #dd2476;
     text-decoration: none;
 }
 

@@ -90,6 +90,44 @@ const Education = () => {
                             </li>
                         </ul>
                     </div>
+                    <div class="resume-box">
+                        <div class="title text-white">
+                            <h3>Certificate</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <ul class="education-box">
+                                    <li>
+                                        <span>2021</span>
+                                        <h6><a href="https://chinmaya-static-certificate.s3.ap-south-1.amazonaws.com/Participation+in+AWS+Cloud+Masterclass+-+Discovery+Day-TZMP5PV5.pdf">Cloud Master Class</a></h6>
+                                        
+                                    </li>
+                                    <li>
+                                        <span>2022</span>
+                                        <h6><a href="https://www.credly.com/badges/b0ef91ef-9859-437a-8f55-f548bc6aac3b/public_url">AWS CLF-C01</a></h6>
+                                    </li>
+                                    <li>
+                                        <span>2022</span>
+                                        <h6><a href="https://codered.eccouncil.org/certificate/f7e96217-ef66-4746-a247-959b3ddd681e">Ethical Hacking Essential</a></h6>
+                                    </li>
+                                    <li>
+                                        <span>2022</span>
+                                        <h6><a href="https://www.credly.com/badges/9ff37c9a-e415-4224-9bc2-f56a5f1a4b3c/public_url">AWS Academy Cloud Foundations</a></h6>
+                                    </li>
+                                    <li>
+                                        <span>2022</span>
+                                        <h6><a href="https://www.credly.com/badges/9265e87b-fd47-4232-8fcd-88ade5c3fa54/public_url">AWS Academy Cloud Security Foundations</a></h6>
+                                    </li>
+                                    <li>
+                                        <span>2022</span>
+                                        <h6><a href="https://www.credly.com/badges/93c0dbd9-1eee-4091-b61b-5669fe7d3edb/public_url">AWS Cloud Quest Game</a></h6>
+                                    </li>
+                                    
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="separated"></div>

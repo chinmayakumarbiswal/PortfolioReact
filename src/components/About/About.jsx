@@ -49,7 +49,7 @@ const About = () => {
                                         </li>
                                         <li>
                                             <label>Age :</label>
-                                            <span>20 Years</span>
+                                            <span>22 Years</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -101,10 +101,10 @@ const About = () => {
                 </div>
                 <div class="col-lg-4" data-aos="zoom-in">
                     <div class="box1">
-                        <i class="fa fa-wpexplorer"></i>
+                        <i class="fa fa-cloud-upload"></i>
                         <div class="content text-white">
-                            <h5>Student</h5>
-                            <p>A 3rd yr IT-Cloud Technology And Information Security student at Centurion University of Technology and Management.</p>
+                            <h5>Solution Architect</h5>
+                            <p>A cloud Solution Architect who helps to built a secure cloud architect and helps user to migrate their infrastructure to AWS .</p>
                         </div>
                     </div>
                 </div>

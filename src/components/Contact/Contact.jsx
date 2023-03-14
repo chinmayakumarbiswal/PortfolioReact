@@ -17,7 +17,7 @@ const Contact = () => {
                           <li class="media">
                               <i class="fa fa-map"></i>
                               <span class="media-body">
-                                  Maa Kalijai boat center, Hatabaradihi
+                                    Chilika 
                               </span>
                           </li>
                           <li class="media">
@@ -27,7 +27,7 @@ const Contact = () => {
                               </span>
                           </li>
                           <li class="media">
-                              <i class="fa fa-mobile"></i>
+                              <i class="fa fa-phone-square"></i>
                               <span class="media-phone">
                                   +91 6370183009
                               </span>

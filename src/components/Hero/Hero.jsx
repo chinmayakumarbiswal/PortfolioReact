@@ -31,7 +31,7 @@ const Hero = () => {
 
                             </p>
                             <p class="desc">
-                                Hello! i'm Chinmaya Kumar Biswal a student and a fontend web developer. Studied Cloud Technology And Information Security at Centurion University of Technology and Management with an interest in System Admin and Web development. 
+                                Hello! i'm Chinmaya Kumar Biswal a student and a fontend web developer. Studies MCA at Centurion University of Technology and Management with an interest in System Admin and Web development. 
                             </p>
                             <div class="btn-bar">
                                 <a href="cv/cvchinmaya.pdf">Download CV</a>
