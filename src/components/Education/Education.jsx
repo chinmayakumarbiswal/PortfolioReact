@@ -37,18 +37,18 @@ const Education = () => {
 
 
   return (
-    <section class="mh-skills" id="skills">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="resume-box">
-                        <div class="title text-white">
+    <section className="mh-skills" id="skills">
+        <div className="container">
+            <div className="row">
+                <div className="col-md-6">
+                    <div className="resume-box">
+                        <div className="title text-white">
                             <h3>Education & Achievement</h3>
                         </div>
-                        <div class="row">
-                            <div class="col-lg-4">
+                        <div className="row">
+                            <div className="col-lg-4">
                                 {education.length > 0 && (
-                                <ul class="education-box">
+                                <ul className="education-box">
                                 
                                     {education.map(educationdata => (
                                         <li>
@@ -64,44 +64,44 @@ const Education = () => {
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="mh-professional-skills">
+                <div className="col-md-6">
+                    <div className="mh-professional-skills">
                         <h3>Skills</h3>
-                        <ul class="mh-professional-progress">
+                        <ul className="mh-professional-progress">
                             <li>
-                                <div class="mh-progress" data-progress="95">
-                                    <div class="title-skills">AWS Infrastructure</div>
+                                <div className="mh-progress" data-progress="95">
+                                    <div className="title-skills">AWS Infrastructure</div>
                                 </div>
                             </li>
                             <li>
-                                <div class="mh-progress" data-progress="80">
-                                    <div class="title-skills">Redhat</div>
+                                <div className="mh-progress" data-progress="80">
+                                    <div className="title-skills">Redhat</div>
                                 </div>
                             </li>
                             <li>
-                                <div class="mh-progress" data-progress="90">
-                                    <div class="title-skills">Web Development</div>
+                                <div className="mh-progress" data-progress="90">
+                                    <div className="title-skills">Web Development</div>
                                 </div>
                             </li>
                             <li>
-                                <div class="mh-progress" data-progress="80">
-                                    <div class="title-skills">cyber Security</div>
+                                <div className="mh-progress" data-progress="80">
+                                    <div className="title-skills">cyber Security</div>
                                 </div>
                             </li>
                         </ul>
                     </div>
-                    <div class="resume-box">
-                        <div class="title text-white">
+                    <div className="resume-box">
+                        <div className="title text-white">
                             <h3>Certificate</h3>
                         </div>
-                        <div class="row">
-                            <div class="col-lg-4">
+                        <div className="row">
+                            <div className="col-lg-4">
                                 {education.length > 0 && (
-                                    <ul class="education-box">
+                                    <ul className="education-box">
                                         {certificate.map(certificatedata => (
                                             <li>
                                                 <span>{certificatedata.year}</span>
-                                                <h6><a href={certificatedata.link}>{certificatedata.name}</a></h6>
+                                                <h6><a href={certificatedata.link} target="_blank" rel="noopener noreferrer">{certificatedata.name}</a></h6>
                                             </li>
                                         ))}
                                     </ul>
@@ -111,7 +111,7 @@ const Education = () => {
                     </div>
                 </div>
             </div>
-            <div class="separated"></div>
+            <div className="separated"></div>
         </div>
     </section>
   )

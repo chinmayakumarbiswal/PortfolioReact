@@ -4,14 +4,14 @@ import chinmaya2 from './chinmaya2.png'
 
 const Mobheader = () => {
   return (
-    <div class="mob-header">
-        <div class="d-flex">
-            <div class="navbar-brand">
+    <div className="mob-header">
+        <div className="d-flex">
+            <div className="navbar-brand">
             <a href="#/">
                 <img src={chinmaya2} alt="chinmay2"/>
                 </a>
             </div>
-            <button class="toggler-menu">
+            <button className="toggler-menu">
                 <span></span>
                 <span></span>
                 <span></span>
