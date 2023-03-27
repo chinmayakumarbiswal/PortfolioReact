@@ -33,7 +33,7 @@ const Contact = () => {
     // alert(values.name+values.email+values.message);
 
     const sendData = async () => {
-        const response = await fetch('/sendmail1', {
+        const response = await fetch('http://localhost:3001/sendmail', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

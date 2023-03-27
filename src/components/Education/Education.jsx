@@ -3,21 +3,27 @@ import './Education.css'
 
 const Education = () => {
 
-    const [education, setUsers] = useState([])
+    const [education, setEdudation] = useState([])
+    const [certificate, setCertificate] = useState([])
 
-  const fetchData = () => {
-    fetch("https://chinmayakumarbiswal.in/api/education")
-      .then(response => {
-        return response.json()
-      })
-      .then(data => {
-        setUsers(data.data)
-        console.log(data.data)
-      })
-  }
+    const fetchEducationData = () => {
+        fetch("https://chinmayakumarbiswal.in/api/education")
+        .then(response => {
+            return response.json()
+        })
+        .then(data => {
+            setEdudation(data.data)
+            console.log(data.data)
+        })
+    }
+
+    const fetchCertificateData = () => {
+        
+    }
 
   useEffect(() => {
-    fetchData()
+    fetchEducationData()
+    fetchCertificateData()
   }, [])
 
 
