@@ -48,17 +48,17 @@ const Education = () => {
                         <div className="row">
                             <div className="col-lg-4">
                                 {education.length > 0 && (
-                                <ul className="education-box">
-                                
-                                    {education.map(educationdata => (
-                                        <li>
-                                            <span>{educationdata.year}</span>
-                                            <h6>{educationdata.education}</h6>
-                                            <p>{educationdata.details}</p>
-                                        </li>
-                                    ))}
-                                
-                                </ul>
+                                    <ul className="education-box">
+                                    
+                                        {education.map(educationdata => (
+                                            <li>
+                                                <span>{educationdata.year}</span>
+                                                <h6>{educationdata.education}</h6>
+                                                <p>{educationdata.details}</p>
+                                            </li>
+                                        ))}
+                                    
+                                    </ul>
                                 )}
                             </div>
                         </div>
@@ -96,7 +96,7 @@ const Education = () => {
                         </div>
                         <div className="row">
                             <div className="col-lg-4">
-                                {education.length > 0 && (
+                                {certificate.length > 0 && (
                                     <ul className="education-box">
                                         {certificate.map(certificatedata => (
                                             <li>
